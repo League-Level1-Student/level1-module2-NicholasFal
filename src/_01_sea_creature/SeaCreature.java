@@ -31,7 +31,8 @@ public class SeaCreature {
 		try {
 		    AudioClip sound = JApplet.newAudioClip(getClass().getResource(this.name + ".wav"));
 		    sound.play();
-			Thread.sleep(3400);
+			System.out.println(name + " is laughing");
+		    Thread.sleep(3400);
 		} catch (Exception ex) {
 			ex.printStackTrace();
 		}
